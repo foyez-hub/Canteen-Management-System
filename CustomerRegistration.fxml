@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.CustomerRegistrationController">
+   <children>
+      <Label alignment="CENTER" layoutX="196.0" layoutY="32.0" prefHeight="41.0" prefWidth="165.0" text="Registration" textFill="#ce2222">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <VBox layoutX="103.0" layoutY="69.0" prefHeight="261.0" prefWidth="367.0" spacing="10.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="17.0" prefWidth="373.0" />
+            <HBox prefHeight="35.0" prefWidth="367.0" spacing="40.0">
+               <children>
+                  <TextField fx:id="FullName" prefHeight="25.0" prefWidth="178.0" promptText="Full Name" />
+                  <TextField prefHeight="25.0" prefWidth="193.0" promptText="Last Name" />
+               </children>
+            </HBox>
+            <HBox prefHeight="64.0" prefWidth="367.0" spacing="40.0">
+               <children>
+                  <TextField prefHeight="25.0" prefWidth="370.0" promptText="Email" />
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="367.0" spacing="20.0">
+               <children>
+                  <PasswordField fx:id="Password" accessibleRole="CHECK_BOX" prefHeight="35.0" prefWidth="193.0" promptText="Password" />
+                  <PasswordField prefHeight="35.0" prefWidth="228.0" promptText="Confirm" />
+               </children>
+            </HBox>
+            <Button mnemonicParsing="false" text="Registration" />
+         </children>
+      </VBox>
+      <Button layoutX="534.0" layoutY="344.0" mnemonicParsing="false" onAction="#CustomerRegBackBtClicked" text="Back" />
+      <HBox layoutX="96.0" layoutY="327.0" prefHeight="33.0" prefWidth="381.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="156.0" text="Already  have an account?" />
+            <Button mnemonicParsing="false" onAction="#CustomerRegBackBtClicked" prefHeight="3.0" prefWidth="56.0" text="Login" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
